@@ -9,7 +9,12 @@
     <meta name="author" content="theijhay">
     <title>theijhay</title>
     <!-- Favicon -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/63587748?s=96&v=4" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="small.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/small.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,48 +30,72 @@
                 <p class="intro">I'm currently an Alx student. I know a bit of C and Python. And now I am just starting with Web dev. Currently, I'm also content creator.</p>
             </div>
             <hr>
-            <div class="skills">
-                <h2>SKILLS</h2>
-                <div class="skill-row">
-                    <img class="python-image" src="images/python.png" alt="python">
-                    <h3>Software development</h3>
-                    <p>I started to code only after joining the Alxswe program. I always had an interest to know the building of Websites and Mobile apps. After joining the Alxswe program I started to explore these interests of mine and now I have a bit
-                        of experience with mobile app development and currently working on Web dev.</p>
+            <!-- Parallax Pixel Background Animation -->
+            <section class="animated-background">
+                <div id="stars1"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </section>
+            <!-- End of Parallax Pixel Background Animation -->
+
+            <a id="profilePicture" href="#popup">
+                <img src="https://avatars.githubusercontent.com/u/63587748?s=96&v=4" alt="Profile Picture">
+            </a>
+
+            <div class="overlay" id="popup">
+                <div class="popup">
+                    <div class="popup-photo" id="profile__img">
+                        <a href="https://avatars.githubusercontent.com/u/63587748?s=96&v=4" target="_blank">
+                            <img src="https://avatars.githubusercontent.com/u/63587748?s=96&v=4" alt="Profile Picture">
+                        </a>
+                    </div>
+                    <div class="popup-quote">
+                        A page like Linktree that allows a person show their personal profile </br> and link to various digital things that they sell....
+                    </div>
+                    <a class="popup-close" onclick="history.back()">&times;</a>
                 </div>
-                <div class="skill-row">
-                    <img class="hp-image" src="images/images.jpeg" alt="Alxswe">
-                    <h3>Alxswe</h3>
-                    <p>DO HARD THINGS</p>
+                <div class="skills">
+                    <h2>SKILLS</h2>
+                    <div class="skill-row">
+                        <img class="python-image" src="images/python.png" alt="python">
+                        <h3>Software development</h3>
+                        <p>I started to code only after joining the Alxswe program. I always had an interest to know the building of Websites and Mobile apps. After joining the Alxswe program I started to explore these interests of mine and now I have a
+                            bit of experience with mobile app development and currently working on Web dev.</p>
+                    </div>
+                    <div class="skill-row">
+                        <img class="hp-image" src="images/images.jpeg" alt="Alxswe">
+                        <h3>Alxswe</h3>
+                        <p>DO HARD THINGS</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="contact-me">
+                    <h2>Get In Touch</h2>
+                    <h3>If you are an Alxswe student😉.</h3>
+                    <p class="contact-message">No offence, but if you are a movie fan, then don't bother. But if you are the book series fan then we can chat long and hard a lot about our first love - "Alxswe" students😉</p>
+                    <a class="btn" href="mailto:olawaleisaacjohn@gmail.com">CONTACT ME</a>
                 </div>
             </div>
-            <hr>
-            <div class="contact-me">
-                <h2>Get In Touch</h2>
-                <h3>If you are an Alxswe student😉.</h3>
-                <p class="contact-message">No offence, but if you are a movie fan, then don't bother. But if you are the book series fan then we can chat long and hard a lot about our first love - "Alxswe" students😉</p>
-                <a class="btn" href="mailto:olawaleisaacjohn@gmail.com">CONTACT ME</a>
+
+
+            <div class="bottom-container">
+                <a class="footer-link" href="https://www.linkedin.com/in/olawaleisaac/">LinkedIn</a>
+                <a class="footer-link" href="https://twitter.com/o_isaacjohn">Twitter</a>
+                <a class=" footer-link " href="https://github.com/theijhay ">Github</a>
+                <p class="copyright ">© 2023 theijhay.</p>
             </div>
-        </div>
-
-
-        <div class="bottom-container">
-            <a class="footer-link" href="https://www.linkedin.com/in/olawaleisaac/">LinkedIn</a>
-            <a class="footer-link" href="https://twitter.com/o_isaacjohn">Twitter</a>
-            <a class=" footer-link " href="https://github.com/theijhay ">Github</a>
-            <p class="copyright ">© 2023 theijhay.</p>
-        </div>
-        <button class="btn " style="position:fixed;bottom:5px;right:5px;border:0; " onclick="switchmodedarklight(this) ">🌕</button>
-        <script>
-            function switchmodedarklight(but) {
-                if (document.body.classList.contains('dark')) {
-                    document.body.classList.remove('dark');
-                    but.innerText = "🌕 ";
-                } else {
-                    document.body.classList.add('dark');
-                    but.innerText = "☀️ ";
+            <button class="btn " style="position:fixed;bottom:5px;right:5px;border:0; " onclick="switchmodedarklight(this) ">🌕</button>
+            <script>
+                function switchmodedarklight(but) {
+                    if (document.body.classList.contains('dark')) {
+                        document.body.classList.remove('dark');
+                        but.innerText = "🌕 ";
+                    } else {
+                        document.body.classList.add('dark');
+                        but.innerText = "☀️ ";
+                    }
                 }
-            }
-        </script>
+            </script>
 </body>
 
 </html>
